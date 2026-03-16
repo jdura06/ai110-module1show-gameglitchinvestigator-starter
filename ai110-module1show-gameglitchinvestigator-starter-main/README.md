@@ -26,12 +26,18 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+   The game's purpose is to have a secret number. The goal is for the player to guess the number within a certain number of attempts. The game will give out hints depending on the answer the player gives. If the player guesses the secret number, they win
 - [ ] Detail which bugs you found.
+   1. the hint checkbox was broken.
+   2. the hints given were flipped.
+   3. the restart button does not work.
 - [ ] Explain what fixes you applied.
+   1. I fixed the checkbox, now it works every time it is pressed.
+   2. I fixed the flipped hints; now it gives the correct hints.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] ![Image of winning game](image.png)
 
 ## 🚀 Stretch Features
 

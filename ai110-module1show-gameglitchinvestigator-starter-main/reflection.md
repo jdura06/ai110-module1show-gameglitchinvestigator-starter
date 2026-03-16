@@ -31,6 +31,8 @@ fixing the logic behind the hint box. It suggested that the hint only displayed 
 
 ---
 
+The way I decided a bug was fixed was by first identifying the bug, then deciding what the actual function should be, then testing after fix to make sure the feature did what it was supposed to do. One of the manual tests I ran was making sure the hint checkbox worked. I entered a guess and tested the fix. AI helped design a few tests for the guessing feature, to make sure the hints were as expected.
+
 ## 4. What did you learn about Streamlit and state?
 
 - In your own words, explain why the secret number kept changing in the original app.
@@ -39,9 +41,15 @@ fixing the logic behind the hint box. It suggested that the hint only displayed 
 
 ---
 
+The original changed because the script kept rerunning every time the user entered a guess. Reruns are the script running again after each input. Session state stores important things that need to be saved after each rerun. The secret is stored in the session state to ahve a stable secret number.
+
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+---
+
+I want to reuse the way I used git in this project. I was not strongly familiar with it, and I want to keep learning how to use it. One thing I would do differently is taking a deeper look at each action the agent makes. I now realized how powerful AI and agents are at helping with code. It can make tasks very easy and quick, but also make fatal mistakes. It needs constant monitoring, but AI is an undeniably useful tool.

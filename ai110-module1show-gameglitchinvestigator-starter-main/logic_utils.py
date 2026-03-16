@@ -4,7 +4,7 @@ def get_range_for_difficulty(difficulty: str):
         return 1, 20
     if difficulty == "Normal":
         return 1, 100
-    if difficulty == "Hard":
+    if difficulty == "Hard": 
         return 1, 50
     # default to normal range if something unexpected is passed
     return 1, 100
