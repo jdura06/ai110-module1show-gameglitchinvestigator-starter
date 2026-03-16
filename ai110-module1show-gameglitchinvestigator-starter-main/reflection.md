@@ -6,10 +6,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+  (for example: "the secret number kept changing" or "the hints were backwards").
 
 ---
-
 What was broken at first glance was that the hint button did not display the hint after clicking it on again. It should display the hint and hide it on every click. The second bug is that the hints are backwards. When the secret guess is lower it actually says go higher, and vice versa. Another bug is that the restart button does not work. What is expected is that you can replay the game from start each time you click the button.
 
 ## 2. How did you use AI as a teammate?
@@ -20,6 +19,9 @@ What was broken at first glance was that the hint button did not display the hin
 
 ---
 
+For this project, I worked exclusively with the Copilot agent. An AI suggestion that was correct was
+fixing the logic behind the hint box. It suggested that the hint only displayed after submitting a guess, so if it was turned off, it would only turn back on for the next guess. It suggested to move the hint logic outside the submission box. I manually verified the result by making a guess and clicking on the checkbox. The bug was completely fixed.
+
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
@@ -29,11 +31,11 @@ What was broken at first glance was that the hint button did not display the hin
 
 ---
 
-I decided a bug was fixed by analyzing what the actual feature should do, what it did originally, and if the new code performed as I expected. I manually ran a test by checking the functionality on the running app. AI designed a simple test for me to check if the hints worked correctly. They were generated automatically to test if the fix was correct.
-
 ## 4. What did you learn about Streamlit and state?
 
+- In your own words, explain why the secret number kept changing in the original app.
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+- What change did you make that finally gave the game a stable secret number?
 
 ---
 
